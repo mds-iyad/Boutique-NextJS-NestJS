@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:4.4.9
+    volumes:
+      - $PWD/data/mongo:/data/db
+      - ./:/toto
+    ports:
+      - 27017:27017
